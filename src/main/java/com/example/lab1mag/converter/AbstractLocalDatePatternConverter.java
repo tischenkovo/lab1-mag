@@ -1,7 +1,6 @@
 package com.example.lab1mag.converter;
 
 import com.opencsv.bean.AbstractBeanField;
-import com.opencsv.exceptions.CsvConstraintViolationException;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
@@ -10,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 
 
-public abstract class LocalDatePatternConverter extends AbstractBeanField<LocalDate, String> {
+public abstract class AbstractLocalDatePatternConverter extends AbstractBeanField<LocalDate, String> {
 
 	protected abstract String getPattern();
 

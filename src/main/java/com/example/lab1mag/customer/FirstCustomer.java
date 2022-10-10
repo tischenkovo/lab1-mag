@@ -1,6 +1,8 @@
-package com.example.lab1mag.customers;
+package com.example.lab1mag.customer;
 
+import com.example.lab1mag.converter.MMDDYYYYLocalDateConverter;
 import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvCustomBindByName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -23,7 +25,7 @@ public class FirstCustomer extends AbstractCustomer {
     private String accountName;
     @CsvBindByName(column = TRAFFIC_SIZE_KB)
     private int trafficSizeKb;
-    @CsvBindByName(column = DATE)
+    @CsvCustomBindByName(converter = MMDDYYYYLocalDateConverter.class, column = DATE)
     private LocalDate date;
     @CsvBindByName(column = CITY)
     private String city;

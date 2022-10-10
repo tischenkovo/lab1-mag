@@ -1,4 +1,4 @@
-package com.example.lab1mag.customers;
+package com.example.lab1mag.customer;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

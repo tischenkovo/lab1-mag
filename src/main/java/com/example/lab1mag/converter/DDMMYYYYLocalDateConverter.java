@@ -1,8 +1,8 @@
-package com.example.lab1mag.converter;/**
- * TODO Class Description
- *
- * @author Veniamin Tischenkov
- * @since 09.10.2022
- */
-public class DDMMYYYYLocalDateConverter {
+package com.example.lab1mag.converter;
+
+public class DDMMYYYYLocalDateConverter extends AbstractLocalDatePatternConverter {
+	@Override
+	protected String getPattern() {
+		return "dd-MM-yyyy";
+	}
 }

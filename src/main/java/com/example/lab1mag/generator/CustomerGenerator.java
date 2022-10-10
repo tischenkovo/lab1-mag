@@ -1,8 +1,14 @@
 package com.example.lab1mag.generator;
 
 
-public interface CustomerTableGenerator {
+import com.example.lab1mag.customer.AbstractCustomer;
 
-    
+import java.util.List;
+
+public interface CustomerGenerator <T extends AbstractCustomer>{
+
+     List<T> generateCustomers();
+
+     void generateAndExportCustomers();
 
 }
