@@ -1,0 +1,1 @@
+C:\Users\Eagle\.jdks\openjdk-19.0.1\bin\java -jar Z:\projects\lab1-mag\out\artifacts\lab1_mag_jar\lab1-mag.jar
